@@ -28,20 +28,13 @@ else
     (cd $DOTFILES_DIR/.oh-my-zsh/custom/plugins/zsh-history-substring-search; git pull)
 fi
 
-# Zsh suggestions while typing
-if [ ! -d "$DOTFILES_DIR/.zsh-autosuggestions" ]; then
-    git clone git://github.com/tarruda/zsh-autosuggestions.git $DOTFILES_DIR/.zsh-autosuggestions
-else
-    (cd $DOTFILES_DIR/.zsh-autosuggestions; git pull)
-fi
-
 # Configures git
 git config --global user.name "Matthieu Napoli"
 git config --global user.email matthieu@mnapoli.fr
 
 
 # Files & directories to symlink
-symlinks=".zshrc .oh-my-zsh .zsh-autosuggestions .gitignore_global .composer"
+symlinks=".zshrc .oh-my-zsh .gitignore_global .composer"
 
 # Create symlinks 
 for symlink in $symlinks; do

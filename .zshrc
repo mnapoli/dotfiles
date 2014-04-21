@@ -65,12 +65,3 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # for Ubuntu
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-# zsh-autosuggestions
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-bindkey '^F' vi-end-of-line
