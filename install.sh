@@ -46,9 +46,9 @@ symlinks=".zshrc .oh-my-zsh .zsh-autosuggestions .gitignore_global .composer"
 # Create symlinks 
 for symlink in $symlinks; do
     echo "Creating symlink for $symlink"
-    if [ -h ~/.$symlink ]; then
+    if [ -h ~/$symlink ]; then
         echo "Skipping $symlink: symlink already exist"
-    elif [ ! -e ~/.$symlink ]; then
+    elif [ ! -e ~/$symlink ]; then
         ln -s $DOTFILES_DIR/$symlink ~/$symlink
     else
         echo "Error for $symlink: file already exist"
