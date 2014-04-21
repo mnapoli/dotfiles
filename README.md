@@ -5,7 +5,7 @@ Installation:
 ```sh
 $ # install ZSH
 $ chsh -s `which zsh`
-$ git clone ...
+$ git clone https://github.com/mnapoli/dotfiles.git
 $ cd dotfiles
 $ ./install.sh
 ```
