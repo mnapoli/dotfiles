@@ -20,5 +20,6 @@ Update:
 
 ```sh
 $ cd dotfiles
+$ git pull
 $ ./install.sh
 ```
