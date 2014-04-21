@@ -1,0 +1,9 @@
+{
+    "config": {
+        "vendor-dir": "vendor",
+        "bin-dir": "bin"
+    },
+    "require": {
+        "phpunit/phpunit": "~4.0"
+    }
+}

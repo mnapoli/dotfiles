@@ -1,0 +1,5 @@
+# Global .gitignore file
+.DS_store
+composer.phar
+.idea/
+.vagrant/
