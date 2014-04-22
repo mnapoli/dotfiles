@@ -9,6 +9,10 @@ ZSH_THEME="jtriley"
 
 # Aliases
 alias grep="grep --color"
+alias hhvm="hhvm -v Eval.Jit=false"
+alias hhvmunit="hhvm -v Eval.Jit=false /usr/bin/env phpunit"
+alias composer="hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/bin/env composer"
+alias phpcomposer="php /usr/bin/env composer"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -47,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git git-extras composer npm symfony2 vagrant heroku zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(brew git git-extras composer node npm symfony2 vagrant heroku zsh-syntax-highlighting zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
