@@ -10,7 +10,7 @@ ZSH_THEME="jtriley"
 # Aliases
 alias grep="grep --color"
 alias hhvm="hhvm -v Eval.Jit=false"
-alias hhvmunit="hhvm -v Eval.Jit=false /usr/bin/env phpunit"
+alias hhvmunit="hhvm -v Eval.Jit=false ~/.composer/bin/phpunit"
 alias composer="hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/local/bin/composer"
 alias phpcomposer="php /usr/local/bin/composer"
 
