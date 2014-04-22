@@ -31,6 +31,7 @@ fi
 # Configures git
 git config --global user.name "Matthieu Napoli"
 git config --global user.email matthieu@mnapoli.fr
+git config --global core.excludesfile '~/.gitignore_global'
 
 
 # Files & directories to symlink
