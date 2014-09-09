@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/.composer/bin:$(brew --prefix homebrew/php/php56)/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/.composer/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Preferred editor
 export EDITOR='nano'
