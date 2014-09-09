@@ -11,7 +11,7 @@ ZSH_THEME="ys"
 alias grep="grep --color"
 alias hhvm="hhvm -v Eval.Jit=false"
 alias hhvmunit="hhvm -v Eval.Jit=false ~/.composer/bin/phpunit"
-alias composer="hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/local/bin/composer"
+#alias composer="hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/local/bin/composer"
 alias phpcomposer="php /usr/local/bin/composer"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/.composer/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/.composer/bin:$(brew --prefix homebrew/php/php56)/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Preferred editor
 export EDITOR='nano'
@@ -69,3 +69,6 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 # for Ubuntu
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+# Disable shared history between terminal windows
+setopt APPEND_HISTORY

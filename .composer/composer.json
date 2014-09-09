@@ -4,6 +4,8 @@
         "bin-dir": "bin"
     },
     "require": {
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~4.0",
+        "mnapoli/couscous": "*",
+        "object-calisthenics/phpcs-calisthenics-rules": "*"
     }
 }

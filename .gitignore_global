@@ -1,5 +1,6 @@
 # Global .gitignore file
 .DS_store
+.DS_Store
 composer.phar
 .idea/
 .vagrant/

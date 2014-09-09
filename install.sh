@@ -35,7 +35,7 @@ git config --global core.excludesfile '~/.gitignore_global'
 
 
 # Files & directories to symlink
-symlinks=".zshrc .oh-my-zsh .gitignore_global .composer"
+symlinks=".zshrc .oh-my-zsh .gitignore_global .composer .ssh/config"
 
 # Create symlinks 
 for symlink in $symlinks; do
