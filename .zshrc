@@ -11,7 +11,7 @@ ZSH_THEME="ys"
 alias grep="grep --color"
 alias hhvm="hhvm -v Eval.Jit=false"
 alias hhvmunit="\hhvm -v Eval.Jit=false ~/.composer/bin/phpunit"
-alias composer="\hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/local/bin/composer"
+#alias composer="\hhvm -v Eval.Jit=false -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=60000 /usr/local/bin/composer"
 alias phpcomposer="php /usr/local/bin/composer"
 
 # Uncomment the following line to use case-sensitive completion.
