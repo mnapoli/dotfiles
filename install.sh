@@ -28,6 +28,13 @@ else
     (cd $DOTFILES_DIR/.oh-my-zsh/custom/plugins/zsh-history-substring-search; git pull)
 fi
 
+# Symfony console
+if [ ! -d "$DOTFILES_DIR/.oh-my-zsh/custom/plugins/symfony-console" ]; then
+    git clone https://github.com/mnapoli/zsh-symfony-console-plugin.git $DOTFILES_DIR/.oh-my-zsh/custom/plugins/symfony-console
+else
+    (cd $DOTFILES_DIR/.oh-my-zsh/custom/plugins/symfony-console; git pull)
+fi
+
 # Configures git
 git config --global user.name "Matthieu Napoli"
 git config --global user.email matthieu@mnapoli.fr
