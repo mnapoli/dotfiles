@@ -23,3 +23,17 @@ $ cd dotfiles
 $ git pull
 $ ./install.sh
 ```
+
+## localrc
+
+A `.localrc` file can contain local configurations:
+
+```
+# Z
+. `brew --prefix`/etc/profile.d/z.sh
+
+$(boot2docker shellinit 2>/dev/null)
+
+# added by travis gem
+source /Users/matthieu/.travis/travis.sh
+```
