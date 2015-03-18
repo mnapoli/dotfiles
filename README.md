@@ -28,7 +28,7 @@ $ ./install.sh
 
 A `.localrc` file can contain local configurations:
 
-```
+```sh
 # Z
 . `brew --prefix`/etc/profile.d/z.sh
 
