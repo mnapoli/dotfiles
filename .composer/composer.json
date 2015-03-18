@@ -5,7 +5,12 @@
     },
     "require": {
         "phpunit/phpunit": "~4.0",
-        "mnapoli/couscous": "*",
-        "object-calisthenics/phpcs-calisthenics-rules": "*"
-    }
+        "couscous/couscous": "dev-master@dev",
+        "object-calisthenics/phpcs-calisthenics-rules": "*",
+        "jolicode/jolici": ">=0.2.3",
+        "liuggio/fastest": "dev-master",
+        "phploc/phploc": "~2.1@dev"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

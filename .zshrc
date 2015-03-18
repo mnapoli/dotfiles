@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git git-extras composer node npm symfony2 vagrant heroku zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(brew git git-extras composer node npm symfony2 symfony-console vagrant heroku meteor zsh-syntax-highlighting zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,3 +72,6 @@ bindkey '^[[B' history-substring-search-down
 
 # Disable shared history between terminal windows
 setopt APPEND_HISTORY
+
+# Source local config
+[ -f .localrc ] && source .localrc
