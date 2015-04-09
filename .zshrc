@@ -74,4 +74,4 @@ bindkey '^[[B' history-substring-search-down
 setopt APPEND_HISTORY
 
 # Source local config
-[ -f .localrc ] && source .localrc
+[ -f ~/.localrc ] && source ~/.localrc

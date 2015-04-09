@@ -6,10 +6,8 @@
     "require": {
         "phpunit/phpunit": "~4.0",
         "couscous/couscous": "dev-master@dev",
-        "object-calisthenics/phpcs-calisthenics-rules": "*",
-        "jolicode/jolici": ">=0.2.3",
-        "liuggio/fastest": "dev-master",
-        "phploc/phploc": "~2.1@dev"
+        "phploc/phploc": "~2.1@dev",
+        "humbug/humbug": "~1.0@dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
